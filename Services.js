@@ -33,7 +33,7 @@ async function sendSms(mobile) {
     const token = await getToken();
     if (!token) {
         console.error('❌ Token not found, SMS sending aborted.');
-        return;
+        return false;
     }
 
     const smsData = {
@@ -55,13 +55,17 @@ async function sendSms(mobile) {
 
         if (response.data.IsSuccessful) {
             console.log("✅ SMS sent successfully:", response.data);
+            return true;  // ✅ مقدار `true` برگردانده شود
         } else {
             console.error("❌ SMS failed to send:", response.data);
+            return false;  // ❌ مقدار `false` برگردانده شود
         }
     } catch (error) {
         console.error("❌ Error while sending SMS:", error.response ? error.response.data : error.message);
+        return false;
     }
 }
+
 
 // Function to register a new user
 async function registerUser(name, phone, birthday_shamsi) {
