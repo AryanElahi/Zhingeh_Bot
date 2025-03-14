@@ -9,10 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^6.5.0",
     "axios": "^1.8.3",
     "express": "^4.21.2",
     "joi": "^17.13.3",
     "node-telegram-bot-api": "^0.66.0",
+    "prisma": "^6.5.0",
     "sms-ir": "^1.0.5"
   }
 }
