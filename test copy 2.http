@@ -1,0 +1,8 @@
+Post http://localhost:3001/send
+Content-Type : application/json
+
+{
+"name": "dkjl",
+"birthday": "1380/09/13",
+"phone": "09181711690"
+}
