@@ -1,0 +1,10 @@
+post https://RestfulSms.com/api/Token
+Content-Type : application/json
+
+{
+	"UserApiKey":"f39b005ce36d425bc915005c",
+	"SecretKey":"it66)%#Zhinga@*&"
+}
+
+                                        
+                             

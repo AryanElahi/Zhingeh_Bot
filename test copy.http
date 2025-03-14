@@ -1,0 +1,11 @@
+Post http://RestfulSms.com/api/UltraFastSend
+Content-Type : application/json
+x-sms-ir-secure-token : Si9vV255dVpkWW9qMFJiUmc3dmpadWY5b3FVckEraXc3eit5SUc1MUgzWDNrN0tvZXhEZzVuNDBLUUFHU3BZUTNEVTlWY1hqNFEvQ0pNazVoOUttc1l6dzF4YndpUXlhR2Z1a1NXZVhxSk5YQlo4WmJiVGU2c2dodmNIM3RZQ3dqQW91S0RRemp4Uk9oZjJLT2lHWWlyYXRCSWNQR2VoK0Rjc29iWFVvQWV5MWt1ZnI0T1FMbkVJdGxoN3Evb0x1
+{
+ "ParameterArray":[
+{ "Parameter": "EstateCode","ParameterValue": ""},
+{ "Parameter": "referID","ParameterValue": ""}
+],
+"Mobile":"09183710608",
+"TemplateId":"83678"
+}
