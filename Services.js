@@ -66,7 +66,6 @@ async function sendSms(mobile) {
     }
 }
 
-
 // Function to register a new user
 async function registerUser(name, phone, birthday_shamsi) {
     try {

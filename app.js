@@ -1,6 +1,7 @@
 const express = require('express');
 const { sendSms, registerUser } = require('./Services');
-
+const { PrismaClient } = require('@prisma/client');
+const prisma = new PrismaClient();
 const app = express();
 const port = 3001;
 
@@ -51,8 +52,17 @@ app.post('/send', async (req, res) => {
         res.status(500).json({ error: "An error occurred while processing the request." });
     }
 });
+app.get('/getAllVisitors', async (req, res) => {
+    try {
+        const allVisitors = await prisma.user.findMany();
+        res.json(allVisitors); // ارسال نتیجه به عنوان JSON
+    } catch (error) {
+        console.error("Error fetching visitors:", error);
+        res.status(500).json({ error: "Internal Server Error" });
+    }
+});
 
 // Start server
 app.listen(port, () => {
-    console.log(`✅ Server is running on port ${port}`);
+    console.log("✅ bot API is running on port 3001");
 });
